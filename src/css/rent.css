@@ -1,0 +1,366 @@
+.is--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
+}
+
+
+
+/* ==================== */
+/* ========rent======== */
+/* ==================== */
+
+.rent {
+    margin-bottom: 80px;
+}
+
+.rent__first-box {
+    overflow: hidden;
+
+}
+
+.rent__img-box {
+    margin-bottom: 40px;
+}
+
+.rent__img-box-title {
+    font-size: 36px;
+    font-style: normal;
+    line-height: 40px;
+    letter-spacing: -1.62px;
+
+    margin-bottom: 16px;
+}
+
+.rent__img {
+    background-image: image-set(url("../img/rent/yaht-form-mob@1x.png") 1x, url("../img/rent/yaht-form-mob@2x.png") 2x);
+    height: 187px;
+    width: 258px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.rent__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.rent__form::before {
+    content: '';
+    position: absolute;
+    height: 283px;
+    width: 283px;
+
+
+    border-radius: 283px;
+    opacity: 0.6000000238418579;
+    background-color: #91AFBA;
+    filter: blur(100px);
+    transform: rotate(-44.916deg) translateX(35px) translateY(195px);
+}
+
+.rent__form-name-text {
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: -0.63px;
+}
+
+.rent__form-name-input {
+    border: none;
+    border-bottom: 1px solid var(--primary-text-color);
+    background: transparent;
+    padding-left: 2px;
+    height: 16px;
+    color: var(--primary-text-color);
+    margin-bottom: 24px;
+}
+
+.rent__form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.rent__form-name-textarea {
+    padding-left: 2px;
+    height: 58px;
+    background-color: transparent;
+    resize: none;
+    color: var(--primary-text-color);
+    border: none;
+    border-bottom: 1px solid var(--primary-text-color);
+    margin-bottom: 24px;
+}
+
+.rent__button {
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    /* 19.2px */
+    letter-spacing: -0.72px;
+    background-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 123px;
+    height: 45px;
+    color: var(--primary-text-color);
+    border-radius: 60px;
+    border: 1px solid var(--primary-text-color);
+    background-color: transparent;
+}
+
+.rent__button-icon {
+    width: 18;
+    height: 100%;
+    margin-left: 16px;
+    fill: var(--primary-text-color);
+}
+
+
+/* ===========Popup============ */
+
+
+.popup {
+    /* test */
+    inset: 0;
+    display: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    overflow-y: auto;
+    /* =========== */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+}
+
+.popup__window {
+    /* test */
+    position: relative;
+    cursor: default;
+    /* =========== */
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+
+    max-width: 335px;
+    height: 396px;
+    border-radius: 20px;
+    background-color: #1F212D;
+    padding: 40px 24px;
+
+
+
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup__window-button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+
+    position: absolute;
+    top: 14px;
+    right: 14px;
+}
+
+.popup__window-botton-svg {
+    width: 100%;
+    height: 100%;
+    stroke: var(--primary-text-color);
+}
+
+.popup__window-content {
+    background-image: image-set(url("../img/rent/modal/yaht-modal-mob@1x.png") 1x, url("../img/rent/modal/yaht-modal-mob@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 149px;
+    width: 287px;
+    margin-bottom: 24px;
+}
+
+.popup__window-content::before {
+    content: '';
+    position: absolute;
+    height: 142px;
+    width: 142px;
+    background-color: #91AFBA;
+    opacity: 0.6000000238418579;
+    filter: blur(100px);
+    transform: translateX(70px) translateY(35px) rotate(-44.916deg);
+}
+
+.popup__window-title {
+    font-size: 24px;
+    font-style: normal;
+    line-height: 120%;
+    /* 28.8px */
+    letter-spacing: -1.08px;
+
+    margin-bottom: 14px;
+}
+
+.popup__window-text {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 19.6px */
+    letter-spacing: -0.28px;
+}
+
+
+
+/* =========================== */
+/* ========media 375px======== */
+/* =========================== */
+
+
+@media screen and (min-width: 375px) {}
+
+/* =========================== */
+/* ========media 768px======== */
+/* =========================== */
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 32px;
+        max-width: 768px;
+    }
+
+    .rent {
+        margin-bottom: 100px;
+    }
+
+    .rent__first-box {
+        display: flex;
+        gap: 0;
+    }
+
+    .rent__img-box {
+        margin-bottom: 0;
+    }
+
+    .rent__img-box-title {
+        width: 287px;
+        font-size: 60px;
+        font-style: normal;
+        line-height: 66px;
+        letter-spacing: -2.7px;
+
+        margin-bottom: 32px;
+    }
+
+    .rent__img {
+        background-image: image-set(url("../img/rent/yaht-form-tab@1x.png") 1x, url("../img/rent/yaht-form-tab@2x.png") 2x);
+        height: 187px;
+        width: 271px;
+        background-size: contain;
+        margin-right: 69px;
+    }
+
+    .rent__form {
+        row-gap: 0;
+        width: 364px;
+        justify-content: end;
+    }
+
+    .rent__form::before {
+        transform: translateX(240px) translateY(120px) rotate(-44.916deg);
+    }
+
+    .rent__form-name-input {
+        margin-bottom: 28px;
+    }
+
+    .rent__form-name-textarea {
+        margin-bottom: 32px;
+    }
+
+    /* =====popup====== */
+    .popup__window {
+        max-width: 570px;
+        height: 522px;
+        padding: 97px 64px 64px 64px;
+        border-radius: 40px;
+    }
+
+    .popup__window-button {
+        top: 32px;
+        right: 32px;
+    }
+
+    .popup__window-content {
+        background-image: image-set(url("../img/rent/modal/yaht-modal-tab@1x.png") 1x, url("../img/rent/modal/yaht-modal-tab@2x.png") 2x);
+        width: 338px;
+        height: 198px;
+        margin: 0 auto;
+        margin-bottom: 21px;
+    }
+
+    .popup__window-content::before {
+        height: 265px;
+        width: 265px;
+        transform: translateX(40px) translateY(-35px) rotate(-44.916deg);
+    }
+
+    .popup__window-title {
+        font-size: 32px;
+        letter-spacing: -1.44px;
+
+
+        margin-bottom: 16px;
+    }
+
+    .popup__window-text {
+        font-size: 16px;
+        letter-spacing: -0.32px;
+    }
+}
+
+/* =========================== */
+/* ========media 1280px======== */
+/* =========================== */
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+        padding: 0 184px;
+    }
+
+    .rent {
+        margin-bottom: 164px;
+    }
+
+    .rent__img {
+        background-image: image-set(url("../img/rent/yaht-form-desk@1x.png") 1x, url("../img/rent/yaht-form-desk@2x.png") 2x);
+        background-size: contain;
+        height: 191px;
+        width: 282px;
+        margin-right: 188px;
+    }
+
+    .rent__form {
+        width: 443px;
+    }
+
+    .rent__form::before {
+        transform: translateX(380px) translateY(120px) rotate(-44.916deg);
+    }
+
+    /* ========popup===== */
+
+    .popup__window-content {
+        background-image: image-set(url("../img/rent/modal/yaht-modal-desk@2x.png") 2x);
+    }
+}
