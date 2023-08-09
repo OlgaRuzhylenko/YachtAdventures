@@ -1,0 +1,67 @@
+<!--Header section-->
+<header class="header">
+  <div class="header-container container">
+    <div class="header-logo">
+      <a class="header-link-logo" href="./index.html"> <img class="header-icon-logo" src="./img/logo.png" alt="yacht" width="16" height="18" /> Yacht Adventures </a>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#about" class="header-nav-link">About</a>
+        </li>
+        <li class="header-item">
+          <a href="#yachts" class="header-nav-link">Yachts</a>
+        </li>
+        <li class="header-item">
+          <a href="#reviews" class="header-nav-link">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+    <button
+      class="menu-toggle js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="menu-toggle-icon" width="24" height="24">
+        <use href="./img/icons.svg#icon-gg-menu-left"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!--Mobile menu-->
+<div class="mobile-menu-container js-menu-container" id="mobile-menu">
+  <div class="mobile-line">  
+   <button class="menu-toggle js-close-menu">
+     <svg class="mobile-close-icon" fill="currentColor" width="24" height="24">
+      <use href="./img/icons.svg#icon-cros"></use>
+     </svg>
+   </button>
+
+    <div class="mobile-logo">
+      <a class="header-link-logo" href="./index.html"> <img class="header-icon-logo" src="./img/logo.png" alt="yacht" /> Yacht Adventures </a>
+    </div>
+  </div>
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+      <a class="mobile-modal-link" href="#about">About</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-modal-link" href="#yachts">Yachts</a>
+    </li>
+    <li class="mobile-menu-item">
+      <a class="mobile-modal-link" href="#reviews">Reviews</a>
+    </li>
+  </ul>
+  <div class="mobile-ellipse">  </div>
+</div>
+
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script>
+  src = './js/mobile-menu.js';
+</script>
