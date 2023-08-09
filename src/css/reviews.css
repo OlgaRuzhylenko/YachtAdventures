@@ -1,0 +1,271 @@
+:root {
+    --dark-blue: #11131F;
+    background-color: #11131F;
+}
+
+.hidden-for-tab-and-mob,
+.hidden-only-mob {
+    display: none;
+}
+
+.reviews {
+    padding-bottom: 80px;
+}
+
+.reviews-title-yacht {
+
+    max-width: 335px;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 1.2;
+    /* 28.8px */
+    letter-spacing: -1.08px;
+    background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+}
+
+.reviews-wrap-title {
+    margin-bottom: 40px;
+}
+
+.reviews-title-other {
+    background-color: #F6F5EF;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -1.08px;
+}
+
+.reviews-customers {
+    text-align: left;
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    /* 19.6px */
+    letter-spacing: -0.28px;
+    margin-bottom: 40px;
+    /* position: fixed; */
+
+}
+
+.flex-paragraph {
+    max-width: 900px;
+}
+
+.customers-list {
+    max-width: 100%;
+}
+
+.customers-item {
+    padding: 24px;
+    max-width: 335px;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+    background: #1F212D;
+}
+
+.customers-card {}
+
+.customers-card-img {
+    margin: auto;
+    margin-bottom: 18px;
+
+    width: 48px;
+    height: 48px;
+    box-shadow: 0px 2px 32px 4px rgba(18, 20, 23, 0.02);
+}
+
+.customers-name {
+    color: var(--white, #F6F5EF);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.1;
+    /* 17.6px */
+    letter-spacing: -0.72px;
+    margin-bottom: 8px;
+}
+
+.customers-review {
+    color: rgba(246, 245, 239, 0.50);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    /* 16.8px */
+    letter-spacing: -0.24px;
+}
+
+
+/*
+  |============================
+  | Section reviews
+  |============================
+*/
+
+/* .scrollTop {
+    display: inline-flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-shrink: 0;
+    color: #93ABAE;
+    background: #93ABAE 0 0 no-repeat;
+  
+    width: 44px; */
+/*ширина кнопки
+    height: 44px;*/
+
+/* bottom: 5px; */
+/*при фіксованому положенні відступ знизу
+    left: 89%;*/
+/*зсув вліво*/
+/* }
+
+.scrollTop:hover {
+    background-position: 0 -108px;
+} */
+/*зміщення фону*/
+
+/* Mobile */
+
+/* @media only screen and (max-width: 31px) {
+     .hidden-for-tab-and-mob {
+            display: none;
+        } 
+} 
+
+} */
+
+
+@media only screen and (min-width: 375px) {}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {
+
+
+
+    .reviews {
+        padding-bottom: 100px;
+    }
+
+    .customers-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .customers-item {
+        display: inline;
+        max-width: 344px;
+        padding: 24px 12px;
+
+    }
+
+    .customers-card-img {
+        margin-bottom: 24px;
+        width: 56px;
+        height: 56px;
+    }
+
+    .hidden-for-tab-and-mob {
+        display: none;
+    }
+
+    .reviews-title-yacht {
+        display: block;
+
+        max-width: 497px;
+        width: 100%;
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -1.44px;
+
+        margin-bottom: 32px;
+
+    }
+
+    .reviews-title-other {
+        background-color: #F6F5EF;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: DM Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: -1.44px;
+    }
+
+    .reviews-customers {
+
+        align-self: flex-end;
+        max-width: 273px;
+        height: 110px;
+        font-size: 16px;
+        font-style: normal;
+
+        letter-spacing: -0.32px;
+    }
+
+    .reviews-wrap-title {
+        display: flex;
+        flex-direction: column;
+
+
+        margin-bottom: 64px;
+
+    }
+
+}
+
+/* Desk screen */
+@media only screen and (min-width: 1280px) {
+    .reviews {
+        padding-bottom: 164px;
+    }
+
+
+
+    .reviews-customers {
+        align-self: start;
+    }
+
+    .reviews-wrap-title {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .customers-item.hidden-for-tab-and-mob {
+        display: inline;
+    }
+
+    .customers-list {
+        gap: 32px;
+    }
+
+    .customers-item {
+        padding: 32px;
+        max-width: 384px;
+    }
+
+}
